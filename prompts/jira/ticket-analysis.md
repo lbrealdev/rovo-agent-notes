@@ -6,18 +6,16 @@ Prompts for analyzing tickets and determining if action is required or if they c
 
 ---
 
-## 1) Analyze Ticket(s) and Suggest Closure
+## 1) Close AWS Health Notification Tickets
 
-One-shot analysis to determine if tickets are informational-only and can be closed.
+Close informational AWS Health tickets assigned to me.
 
 ```text
 /update-work-items
-Analyze ticket(s) <TICKET-KEY(S)> in <PROJECT>:
-- Summarize each issue in 3-5 bullet points
-- Classify as: Action Required or Informational
-- For informational tickets: draft closing comment and suggest status/resolution
-
-Return: Key | Summary | Classification | Draft Comment | Suggested Status
+For tickets assigned to me with "aws_health" in the description:
+- If informational-only (AWS notification requiring no action):
+  - Resolve with status "Resolved"
+  - Add comment: "AWS Health notification received. No action required. Closing."
 ```
 
 ---
