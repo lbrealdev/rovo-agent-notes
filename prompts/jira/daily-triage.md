@@ -172,3 +172,83 @@ AND assignee = currentUser()
 AND statusCategory != Done
 ORDER BY "Time to resolution" ASC, created ASC
 ```
+
+---
+
+## Daily Prompts
+
+Quick prompts for daily standups and queue reviews.
+
+### List My Tickets as Bullets
+
+```text
+List my open <PROJECT> tickets as bullets
+```
+
+### My Tickets Grouped by Status
+
+```text
+Using my current <PROJECT> Jira list, give me a bullet list of my tickets grouped by status.
+```
+
+### My Tickets by Shortest SLA
+
+```text
+Which tickets have the shortest SLA? Show me which ones are closest to expiring.
+```
+
+### Weekly Summary
+
+```text
+It's Friday. Give me a brief summary about all of my assigned issues to close the week.
+```
+
+### Summary of Unassigned Issues
+
+```text
+Give me a bulleted summary of all open and unassigned issues.
+```
+
+### Unassigned Issues in Table Format
+
+```text
+Give me a summary in table format of all open and unassigned issues.
+```
+
+### Prioritize My Work
+
+```text
+Help me prioritize what to do next.
+```
+
+### Summarize My Tickets
+
+```text
+Summarize what's going on with my tickets.
+```
+
+### Improve Ticket Description
+
+```text
+Take this Jira issue description and align it to best-practice:
+
+[PASTE DESCRIPTION]
+```
+
+### Create User Story Template
+
+```text
+Create a description template for user stories.
+```
+
+### Summarize Ticket Comments
+
+```text
+Summarize the comments on Jira issue <TICKET-KEY>.
+```
+
+### Ignore Jira Context
+
+```text
+Ignore the Jira context for now; I want to talk about [topic] instead.
+```

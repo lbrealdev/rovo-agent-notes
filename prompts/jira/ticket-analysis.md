@@ -64,3 +64,31 @@ project = <PROJECT> AND (summary ~ "notification" OR description ~ "notification
 - Always review the suggested comment before posting - verify it matches your tone and the specific situation
 - When unsure if a ticket is informational-only, default to requiring follow-up
 - Use the AWS example as a template for other notification sources (monitoring tools, automated alerts, etc.)
+
+---
+
+## Summary Templates
+
+Template prompts for reporting and evaluation.
+
+### List Issues by Reporter
+
+```text
+In the <PROJECT> project, list all issues created by reporter <REPORTER> between last Friday and today.
+Treat "open" as status = "Waiting for support".
+Show only the ones that are currently in "Waiting for support" and unassigned.
+Return a table: Key, Summary, Status, Assignee, Reporter, Created.
+```
+
+### Evaluate Ticket Description
+
+Evaluate and improve a ticket description for on-call engineers.
+
+```text
+Take the description text from Jira issue <TICKET-KEY> and evaluate it.
+Assume I have already checked the affected resource and confirmed there is no current impact.
+
+Grade the description from 0-10 for clarity and completeness for an on-call engineer.
+Briefly justify the grade (what is good / what is missing).
+Suggest an improved version of the description I could paste back into the ticket.
+```
