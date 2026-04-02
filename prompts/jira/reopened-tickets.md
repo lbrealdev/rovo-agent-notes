@@ -9,7 +9,7 @@ Quick reference for comparing reopened tickets against their previous closure an
 ## TL;DR
 
 1. Ask Rovo: *"What changed since closure?"* (compare same ticket)
-2. Ask Rovo: *"Find similar closed tickets"* (pattern matching)
+2. Ask Rovo: *"Detect pattern and auto-close"* (pattern matching)
 3. Review draft response before applying any changes
 
 ---
@@ -39,25 +39,29 @@ I'm working a <PROJECT> ticket that was reopened: <TICKET-KEY>.
    including: Status, Resolution, Latest customer message, Next action.
 ```
 
-### Step 2: Find Similar Closed Tickets
+### Step 2: Detect Recurring Pattern & Auto-Close
 
-Use when the reopened ticket might match a recurring pattern (AWS notification, known false positive, etc.).
+Use when a ticket might be a recurring duplicate that teammates have already resolved.
 
 ```text
-For <TICKET-KEY>, find up to 5 similar tickets that were resolved/closed in the last 30 days.
+Analyze <TICKET-KEY> and determine if it matches a recurring duplicate pattern.
 
-Method:
-- Use JQL/text similarity based on the summary + key phrases in the description/comments.
-- Prefer matches with the same request type/component/labels (if available).
+Steps:
+1) Look at ALL tickets assigned to me (currentUser()) created in the last 24 hours.
+2) Identify tickets with the same or similar summary/keywords that appear more than once.
+3) For tickets flagged as "recurring duplicates":
+   - Find up to 3 similar tickets that were recently closed by teammates
+   - Extract: resolution, internal note used, customer-visible reply
+4) If a pattern is confirmed:
+   - Draft a closure reply consistent with teammate responses
+   - Provide a 3-item checklist before closing
+5) If no clear pattern: return "No recurring pattern detected"
 
-For each similar ticket, return a table with:
-| Key | Similarity reason | Final status+resolution | What was done | Final customer-visible reply (quoted) |
-
-Then propose:
-- Whether <TICKET-KEY> can be closed the same way (yes/no/unclear)
-- A draft customer-visible closing reply consistent with the pattern
-- Any checks I should do before closing (short checklist)
-Do not update the ticket yet.
+Output format:
+- Pattern match: (yes/no/unclear)
+- Similar tickets table: Key | Summary | Resolution | Teammate Reply
+- Draft closure reply (ready to paste)
+- Quick checklist
 ```
 
 ### Step 3: Batch Mode (Multiple Tickets)
@@ -66,19 +70,17 @@ Do not update the ticket yet.
 I have <N> reopened tickets: <TICKET-1>, <TICKET-2>, <TICKET-3>.
 
 For each ticket:
-1) Summarize the last closure attempt (who/when/status/resolution/last public reply).
-2) Summarize the reopen trigger (what the customer said / what changed).
-3) Classify as:
-   - Reopen due to missing info
-   - Reopen due to incomplete fix
-   - Reopen due to customer confusion / comms
-   - Likely duplicate/recurring/no-action pattern
-4) For tickets in the last category, find 3 similar closed tickets and extract the exact closure wording used.
+1) Detect if it matches a recurring duplicate pattern (same as Step 2 logic).
+2) Summarize the last closure attempt (who/when/status/resolution/last public reply).
+3) Summarize the reopen trigger (what the customer said / what changed).
+4) Classify as:
+   - Pattern match: use teammate closure pattern
+   - No pattern: summarize for manual review
 
 Return:
-- One table per ticket with the comparison ("Closed then" vs "Now")
-- A recommended next action and a draft reply (customer-visible).
-Do not transition or comment yet.
+- Pattern matches table: Key | Summary | Teammate Reply | Draft Closure
+- No pattern table: Key | Summary | Closure Summary | Next Action
+- Do not transition or comment yet.
 ```
 
 ---
