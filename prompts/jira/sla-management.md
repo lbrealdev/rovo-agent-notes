@@ -6,6 +6,27 @@ Prompts for managing SLA-related scenarios in Jira Service Management.
 
 ---
 
+## SLA JQL Functions Reference
+
+Jira SLA fields support specific functions for JQL queries. Note: SLA fields cannot be compared to absolute dates.
+
+### Available Functions
+
+| Function | Description | Example |
+|----------|-------------|---------|
+| `remaining()` | Time left until SLA expires | `remaining("Time to resolution") < 72` |
+| `elapsed()` | Time since SLA started | `elapsed("Time to resolution") > 48` |
+| `breached()` | Whether SLA has been breached (returns true/false) | `breached("Time to resolution") = true` |
+| `withinCalendarHours()` | Check if SLA falls within specific calendar hours | `withinCalendarHours("Time to resolution", "09:00", "17:00")` |
+
+### Important Notes
+
+- SLA functions work with the SLA field name in quotes, e.g., `remaining("Time to resolution")`
+- Values are typically expressed in hours when used with comparison operators
+- `breached()` returns a boolean, not a duration
+
+---
+
 ## 1) Signal Work Continuation (Ticket X → Ticket Y)
 
 Use this when work on a ticket will continue in another ticket due to SLA expiry or other reasons.
@@ -40,17 +61,16 @@ You are helping me manage Jira Service Management tickets in the <PROJECT> proje
 Context: The team is away during the following period(s):
 <INSERT-AWAY-DATES> (e.g., December 23, 2024 – January 2, 2025)
 
-Step 1: Use Jira JQL to find open tickets whose SLA ("Time to resolution") falls within or overlaps the away period.
+Step 1: Calculate the total hours in the away period. Then use Jira JQL to find open tickets whose SLA will expire within that window.
 
 Use JQL like:
 project = <PROJECT>
 AND statusCategory != Done
-AND "Time to resolution" >= <START-DATE>
-AND "Time to resolution" <= <END-DATE>
-ORDER BY "Time to resolution" ASC
+AND remaining("Time to resolution") < <HOURS-AWAY>
+ORDER BY remaining("Time to resolution") ASC
 
 Step 2: Return a table with columns:
-Key, Summary, Status, Assignee, "Time to resolution" (SLA expiry), Priority.
+Key, Summary, Status, Assignee, remaining("Time to resolution") (hours left), Priority.
 
 Step 3: For each ticket, draft a closure plan:
 - Draft an informational comment noting the case will be handled in a new ticket once the team returns
@@ -76,7 +96,7 @@ Step 1: Search ticket comments for the specified pattern.
 
 Use JQL like:
 project = <PROJECT>
-AND text ~ "<PATTERN>"
+AND comment ~ "<PATTERN>"
 ORDER BY updated DESC
 
 Step 2: Return a table with columns:
@@ -91,20 +111,19 @@ Do NOT update any tickets. This is read-only.
 
 ## JQL Templates
 
-### Tickets with SLA in Date Range
+### Tickets with SLA Expiring Soon
 
 ```jql
 project = <PROJECT>
 AND statusCategory != Done
-AND "Time to resolution" >= <START-DATE>
-AND "Time to resolution" <= <END-DATE>
-ORDER BY "Time to resolution" ASC
+AND remaining("Time to resolution") < <HOURS>
+ORDER BY remaining("Time to resolution") ASC
 ```
 
 ### Tickets with Text in Comments
 
 ```jql
 project = <PROJECT>
-AND text ~ "<PATTERN>"
+AND comment ~ "<PATTERN>"
 ORDER BY updated DESC
 ```
