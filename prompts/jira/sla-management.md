@@ -52,13 +52,12 @@ ORDER BY "Time to resolution" ASC
 Step 2: Return a table with columns:
 Key, Summary, Status, Assignee, "Time to resolution" (SLA expiry), Priority.
 
-Step 3: For each ticket, suggest one of:
-- Reassign to coverage/on-call
-- Extend SLA (if possible)
-- Draft customer reply acknowledging delay
-- Escalate
+Step 3: For each ticket, draft a closure plan:
+- Draft an informational comment noting the case will be handled in a new ticket once the team returns
+- Suggest an appropriate resolution status (e.g., "Resolved" or "Closed")
+- Provide the draft comment text for my review
 
-Do NOT update any tickets. This is read-only with suggestions unless I confirm.
+Do NOT update any tickets. This is read-only with draft comments unless I confirm.
 ```
 
 ---
