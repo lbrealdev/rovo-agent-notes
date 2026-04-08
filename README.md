@@ -62,6 +62,8 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
 
 ```
 .
+├── workbench/                   # Experimental prompts (in testing)
+│   └── aws-health-notifications.md
 ├── guides/
 │   ├── document-summaries.md    # Summarize Confluence/AWS docs
 │   └── .md
@@ -78,19 +80,7 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
         └── my-tickets.md       # JQL queries for my tickets
 ```
 
----
-
-## Quick Links
-
-| Category | File | Purpose |
-|----------|------|---------|
-| Daily Work | `prompts/jira/daily-triage.md` | List, assign, prioritize tickets |
-| Analysis | `prompts/jira/ticket-analysis.md` | Analyze and close informational tickets |
-| Special Commands | `prompts/prompts-special.md` | Multi-action prompts with Rovo commands |
-| Reopened Tickets | `prompts/jira/reopened-tickets.md` | Handle reopened tickets |
-| Proofreading | `prompts/proofreading.md` | Polish messages before sending |
-| Documentation | `guides/document-summaries.md` | Summarize Confluence/AWS docs |
-| JQL | `queries/jql/my-tickets.md` | Reusable JQL queries |
+**Note:** `workbench/` contains prompts being actively developed and tested. Once stable, they may be promoted to `prompts/`.
 
 ---
 
