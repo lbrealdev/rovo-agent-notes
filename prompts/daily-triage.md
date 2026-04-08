@@ -43,30 +43,4 @@ Improve this ticket description for on-call clarity and paste the improved versi
 [PASTE DESCRIPTION]
 ```
 
----
 
-## Daily Prompts
-
-Quick prompts for daily standups and queue reviews.
-
-**Note:** For My Tickets prompts, see `quick-prompts.md`.
-
----
-
-### Create User Story Template
-
-```
-Create a user story description template for <PROJECT> with: As a [role], I want [goal], so that [benefit]. Include acceptance criteria placeholders.
-```
-
-### Summarize Ticket Comments
-
-```
-Summarize the comments on Jira issue <TICKET-KEY>: what questions were asked, what answers were given, and current status.
-```
-
-### Ignore Jira Context
-
-```
-Ignore the Jira context for now; I want to talk about [topic] instead.
-```
