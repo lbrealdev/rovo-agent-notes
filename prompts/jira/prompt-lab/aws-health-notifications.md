@@ -31,6 +31,15 @@ For the tickets listed above:
 - Change status to "Resolved" or "Closed"
 ```
 
+### Step 2 - Rovo-crafted Message (Alternative)
+
+```
+/update-work-items
+For the tickets listed above:
+- Review each AWS Health notification and add an appropriate comment explaining why no action is required (e.g., past incident, informational only, etc.)
+- Change status to "Resolved" or "Closed"
+```
+
 ---
 
 ## Workflow for AWS Health Notifications
