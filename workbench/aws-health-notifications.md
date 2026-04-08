@@ -27,15 +27,6 @@ Display results in a table with these columns:
 ```
 /update-work-items
 For the tickets listed above:
-- Add comment: "AWS Health notification received. No action required."
-- Change status to "Resolved" or "Closed"
-```
-
-### Step 2 - Rovo-crafted Message (Alternative)
-
-```
-/update-work-items
-For the tickets listed above:
 - Review each AWS Health notification and add an appropriate **Reply to customer** comment explaining why no action is required (e.g., past incident, informational only, etc.)
 - Change status to "Resolved" or "Closed"
 ```
@@ -44,12 +35,14 @@ For the tickets listed above:
 
 ## Workflow for AWS Health Notifications
 
-1. Ticket opened from AWS Health notification
-2. Assigned with initial note (first-response SLA)
-3. Review the AWS Health notification
-4. If past incident/notification only:
-   - Add comment noting it's an AWS notification
-   - Change status to "Resolved" or "Closed"
+1. **Step 1 (Read-only):** Find and review tickets containing aws_health
+2. **Step 2 (After confirmation):** Add Reply to customer comment + resolve ticket
+
+**When to use:**
+- Ticket opened from AWS Health notification
+- Assigned with initial note (first-response SLA)
+- Review the AWS Health notification
+- If past incident/notification only: apply Step 2
 
 ---
 
