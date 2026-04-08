@@ -12,30 +12,30 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
   - [Summarize Procedure](guides/document-summaries.md#summarize-procedure)
 
 ### Jira Prompts
-- [Daily Triage](prompts/jira/daily-triage.md)
-  - [List Today's Unassigned Tickets](prompts/jira/daily-triage.md#1-list-todays-unassigned-tickets)
-  - [Assign to Me + Add Initial Customer Reply](prompts/jira/daily-triage.md#2-assign-to-me--add-initial-customer-reply)
-  - [Review & Improve Ticket Description](prompts/jira/daily-triage.md#3-review--improve-ticket-description)
-  - [My Assigned Tickets, Sorted by Urgency/SLA](prompts/jira/daily-triage.md#4-my-assigned-tickets-sorted-by-urgencysla)
-  - [Filter "Likely No-Action" Alert-Style Tickets](prompts/jira/daily-triage.md#5-filter-likely-no-action-alert-style-tickets)
-  - [JQL Quick Reference](prompts/jira/daily-triage.md#jql-quick-reference)
-  - [Daily Prompts](prompts/jira/daily-triage.md#daily-prompts)
-- [Ticket Analysis](prompts/jira/ticket-analysis.md)
-  - [Close AWS Health Notification Tickets](prompts/jira/ticket-analysis.md#1-close-aws-health-notification-tickets)
-  - [Filter Informational Tickets](prompts/jira/ticket-analysis.md#2-filter-informational-tickets-aws-example)
-  - [JQL Templates](prompts/jira/ticket-analysis.md#jql-templates)
-  - [Tips](prompts/jira/ticket-analysis.md#tips)
-  - [Summary Templates](prompts/jira/ticket-analysis.md#summary-templates)
-- [Reopened Tickets](prompts/jira/reopened-tickets.md)
-  - [TL;DR](prompts/jira/reopened-tickets.md#tldr)
-  - [Best Practice Workflow](prompts/jira/reopened-tickets.md#best-practice-workflow)
-  - [Taking Action](prompts/jira/reopened-tickets.md#taking-action)
-  - [Tips](prompts/jira/reopened-tickets.md#tips)
-- [SLA Management](prompts/jira/sla-management.md)
-  - [SLA JQL Functions Reference](prompts/jira/sla-management.md#sla-jql-functions-reference)
-  - [Signal Work Continuation](prompts/jira/sla-management.md#1-signal-work-continuation-ticket-x--ticket-y)
-  - [SLA Expiring During Team Absence](prompts/jira/sla-management.md#2-sla-expiring-during-team-absence)
-  - [Find Tickets with Note Pattern](prompts/jira/sla-management.md#3-find-tickets-with-note-pattern)
+- [Daily Triage](prompts/daily-triage.md)
+  - [List Today's Unassigned Tickets](prompts/daily-triage.md#1-list-todays-unassigned-tickets)
+  - [Assign to Me + Add Initial Customer Reply](prompts/daily-triage.md#2-assign-to-me--add-initial-customer-reply)
+  - [Review & Improve Ticket Description](prompts/daily-triage.md#3-review--improve-ticket-description)
+  - [My Assigned Tickets, Sorted by Urgency/SLA](prompts/daily-triage.md#4-my-assigned-tickets-sorted-by-urgencysla)
+  - [Filter "Likely No-Action" Alert-Style Tickets](prompts/daily-triage.md#5-filter-likely-no-action-alert-style-tickets)
+  - [JQL Quick Reference](prompts/daily-triage.md#jql-quick-reference)
+  - [Daily Prompts](prompts/daily-triage.md#daily-prompts)
+- [Ticket Analysis](prompts/ticket-analysis.md)
+  - [Close AWS Health Notification Tickets](prompts/ticket-analysis.md#1-close-aws-health-notification-tickets)
+  - [Filter Informational Tickets](prompts/ticket-analysis.md#2-filter-informational-tickets-aws-example)
+  - [JQL Templates](prompts/ticket-analysis.md#jql-templates)
+  - [Tips](prompts/ticket-analysis.md#tips)
+  - [Summary Templates](prompts/ticket-analysis.md#summary-templates)
+- [Reopened Tickets](prompts/reopened-tickets.md)
+  - [TL;DR](prompts/reopened-tickets.md#tldr)
+  - [Best Practice Workflow](prompts/reopened-tickets.md#best-practice-workflow)
+  - [Taking Action](prompts/reopened-tickets.md#taking-action)
+  - [Tips](prompts/reopened-tickets.md#tips)
+- [SLA Management](prompts/sla-management.md)
+  - [SLA JQL Functions Reference](prompts/sla-management.md#sla-jql-functions-reference)
+  - [Signal Work Continuation](prompts/sla-management.md#1-signal-work-continuation-ticket-x--ticket-y)
+  - [SLA Expiring During Team Absence](prompts/sla-management.md#2-sla-expiring-during-team-absence)
+  - [Find Tickets with Note Pattern](prompts/sla-management.md#3-find-tickets-with-note-pattern)
 
 ### Other Prompts
 - [Special Commands](prompts/prompts-special.md)
@@ -68,12 +68,12 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
 │   ├── document-summaries.md    # Summarize Confluence/AWS docs
 │   └── .md
 ├── prompts/
-│   ├── jira/
-│   │   ├── daily-triage.md      # Daily triage operations
-│   │   ├── reopened-tickets.md  # Handle reopened tickets
-│   │   ├── ticket-analysis.md  # Analyze & close tickets
-│   │   └── .md
-│   ├── prompts-special.md       # Lean multi-line prompts
+│   ├── daily-triage.md         # Daily triage operations
+│   ├── reopened-tickets.md     # Handle reopened tickets
+│   ├── ticket-analysis.md      # Analyze & close tickets
+│   ├── sla-management.md       # SLA-aware prompts
+│   ├── prompts-special.md      # Lean multi-line prompts
+│   ├── quick-prompts.md        # Quick conversational prompts
 │   └── proofreading.md         # Message proofreading
 └── queries/
     └── jql/
