@@ -37,5 +37,5 @@ Add a customer reply comment and move the newly created (cloned) ticket to "In P
 
 ```
 /update-work-items
-Add "Continuation of the work that was being done [original ticket]" as a "Reply to customer" comment and move ticket from "Waiting for Support" to "In Progress"
+Add "Continuation of the work that was being done [original ticket]" as a "Reply to customer" comment — use Jira inline link format: [KEY|URL] — and move ticket from "Waiting for Support" to "In Progress"
 ```
