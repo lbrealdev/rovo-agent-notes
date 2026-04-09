@@ -16,9 +16,9 @@ Clone the original ticket to the same project, keeping the description but addin
 
 ```
 /create-work-items
-1. Clone <TICKET-KEY> to the same project
-2. Assign to me
-3. Preserve the existing description and append "Cloned from: [original ticket URL]" to it
+- Clone <TICKET-KEY> to the same project
+- Assign to me
+- Preserve the existing description and append "Cloned from: [original ticket URL]" to it
 ```
 
 ### 2) Update Original Ticket
@@ -27,8 +27,8 @@ Add a comment to the original ticket pointing to the new clone, then resolve it.
 
 ```
 /update-work-items
-1. Add a comment to the original ticket with: "Work continues in [new ticket URL]"
-2. Resolve the original ticket
+- Add a comment to the original ticket with: "Work continues in [new ticket URL]" — use Jira inline link format: [KEY|URL]
+- Resolve the original ticket
 ```
 
 ### 3) Move New Ticket to In Progress
