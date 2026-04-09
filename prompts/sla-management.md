@@ -58,7 +58,7 @@ Use this when you need to duplicate a ticket within the same project, keeping th
 1. Clone <TICKET-KEY> to the same project
 2. Assign to me
 3. Set status to "In Progress"
-4. Preserve the existing description and append "Cloned from: <TICKET-KEY>" to it
+4. Preserve the existing description and append "Cloned from: [original ticket URL]" to it
 ```
 
 ---
