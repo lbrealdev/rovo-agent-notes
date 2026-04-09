@@ -28,7 +28,7 @@ Show me all unassigned <PROJECT> tickets from the last 24 hours in a table (Key,
 **Step 2 (After confirmation):**
 ```
 /update-work-items
-Assign all listed tickets to me and add "Ticket under review. We'll update you shortly." as a customer reply.
+Assign all listed tickets to me, change status from "Waiting for Support" to "In Progress", and add "Ticket under review. We'll update you shortly." as a customer reply.
 ```
 
 ---
