@@ -33,9 +33,9 @@ Add a comment to the original ticket pointing to the new clone, then resolve it.
 
 ### 3) Move New Ticket to In Progress
 
-Move the newly created (cloned) ticket from "Waiting for Support" to "In Progress".
+Add a customer reply comment and move the newly created (cloned) ticket to "In Progress".
 
 ```
 /update-work-items
-Move the new cloned ticket from "Waiting for Support" to "In Progress"
+Add "Continuation of the work that was being done [original ticket]" as a "Reply to customer" comment and move ticket from "Waiting for Support" to "In Progress"
 ```
