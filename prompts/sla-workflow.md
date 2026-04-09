@@ -27,8 +27,8 @@ Add a comment to the original ticket pointing to the new clone, then resolve it.
 
 ```
 /update-work-items
-1. Add a comment to <TICKET-KEY> with: "Work continues in [new ticket URL]"
-2. Resolve <TICKET-KEY>
+1. Add a comment to the original ticket with: "Work continues in [new ticket URL]"
+2. Resolve the original ticket
 ```
 
 ### 3) Move New Ticket to In Progress
@@ -37,5 +37,5 @@ Move the newly created (cloned) ticket from "Waiting for Support" to "In Progres
 
 ```
 /update-work-items
-Change the status of <NEW-TICKET> from "Waiting for Support" to "In Progress"
+Move the new cloned ticket from "Waiting for Support" to "In Progress"
 ```
