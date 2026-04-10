@@ -138,6 +138,52 @@ Policy:
 
 ---
 
+### Example 5: Discovered Prerequisite (Proactive)
+
+**Use when:** You reviewed the ticket with a teammate and identified a prerequisite — you're already working on it.
+
+**Prompt to Rovo:**
+```
+Reply to the reporter, professional. I reviewed the ticket and consulted with <TEAMMATE>.
+We need to configure <PREREQUISITE> before proceeding with <TASK>.
+I'm starting this configuration now and will update you once ready.
+```
+
+**Draft response:**
+> Hi <NAME>,
+>
+> I've reviewed your request and consulted with <TEAMMATE>. We need to configure <PREREQUISITE> before we can proceed with <TASK>.
+>
+> I'm starting this configuration now and will update you once we're ready to continue.
+>
+> Kind regards,
+> <YOUR-NAME>
+
+---
+
+### Example 6: Discovered Prerequisite (Investigating)
+
+**Use when:** You reviewed the ticket with a teammate and discovered complexity — still assessing the solution.
+
+**Prompt to Rovo:**
+```
+Reply to the reporter, professional. I reviewed the ticket with <TEAMMATE> about <TOPIC>.
+We're investigating the configuration needed before proceeding.
+I'll update you once we have a clear path forward.
+```
+
+**Draft response:**
+> Hi <NAME>,
+>
+> I've reviewed your request with <TEAMMATE>. We're investigating the configuration needed before we can proceed.
+>
+> I'll update you once we have a clear path forward.
+>
+> Kind regards,
+> <YOUR-NAME>
+
+---
+
 ## Rovo Tips for This Template
 
 | Element | Tip |
