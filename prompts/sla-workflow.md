@@ -27,7 +27,7 @@ Add a comment to the original ticket pointing to the new clone, then resolve it.
 
 ```
 /update-work-items
-- Add a comment to the original ticket with: "Work continues in [new ticket URL]" — use Jira inline link format: [KEY|URL]
+- Add a comment to the original ticket with: "Work continues in [new ticket]" — USE Jira wiki-style link: [link text|https://url]
 - Resolve the original ticket
 ```
 
@@ -37,5 +37,5 @@ Add a customer reply comment and move the newly created (cloned) ticket to "In P
 
 ```
 /update-work-items
-Add "Continuation of the work that was being done [original ticket]" as a "Reply to customer" comment — use Jira inline link format: [KEY|URL] — and move ticket from "Waiting for Support" to "In Progress"
+Add "Continuation of the work that was being done [original ticket]" as a "Reply to customer" comment — USE Jira wiki-style link: [link text|https://url] — and move ticket from "Waiting for Support" to "In Progress"
 ```
