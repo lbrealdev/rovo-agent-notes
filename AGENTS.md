@@ -53,3 +53,19 @@ Prompts use `<UPPERCASE-WITH-HYPHENS>`:
 - Prompts include read-only steps first, update steps after explicit confirmation
 - Guardrails: "If more than 20 tickets, stop and ask"
 - Use `/update-work-items` prefix for prompts that modify tickets
+
+## Markdown Conventions
+
+### Code Blocks for Prompts
+
+All prompt text must be wrapped in triple backticks for easy copy-paste:
+
+```markdown
+```text
+Your multi-line prompt text here...
+```
+```
+
+Use language specifiers:
+- `text` for plain text prompts
+- `jql` for JQL queries
