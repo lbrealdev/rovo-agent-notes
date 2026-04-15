@@ -11,25 +11,25 @@ Short conversational prompts for Rovo Agent.
 ### List Tickets (Bullets)
 
 ```
-List my open <PROJECT> tickets as bullets (Key, Summary, Status, SLA remaining)
+List my open <PROJECT> tickets as bullets (Key, Summary, Status, Time to resolution)
 ```
 
 ### List Tickets (Table)
 
 ```
-Show my open <PROJECT> tickets in a table (Key, Summary, Status, SLA remaining)
+Show my open <PROJECT> tickets in a table (Key, Summary, Status, Time to resolution)
 ```
 
 ### Group by Status
 
 ```
-Group my <PROJECT> tickets by status (Waiting for support, In Progress, etc.) and show SLA remaining for each
+Group my <PROJECT> tickets by status (Waiting for support, In Progress, etc.) and show Time to resolution for each
 ```
 
 ### Prioritize by SLA
 
 ```
-Show my tickets sorted by SLA urgency (shortest first): Key, Summary, Status, Time to SLA
+Show my tickets sorted by SLA urgency (shortest first): Key, Summary, Status, Time to resolution
 ```
 
 ### Summarize
@@ -51,13 +51,13 @@ It's Friday. Give me a brief summary of all my assigned issues to close the week
 ### Summary of Unassigned Issues (Bullets)
 
 ```
-Give me a bulleted summary of all open and unassigned issues (Key, Summary, Status, SLA remaining).
+Give me a bulleted summary of all open and unassigned issues (Key, Summary, Status, Time to resolution).
 ```
 
 ### Unassigned Issues in Table
 
 ```
-Show all open and unassigned issues in a table (Key, Summary, Status, Reporter, Created, SLA).
+Show all open and unassigned issues in a table (Key, Summary, Status, Reporter, Created, Time to resolution).
 ```
 
 ---
