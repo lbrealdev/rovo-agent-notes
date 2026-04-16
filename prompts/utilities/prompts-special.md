@@ -83,7 +83,7 @@ Use JQL to find tickets in <PROJECT> with:
 - updated >= -7d
 
 For each ticket:
-1) Show a table: Key, Summary, Status, SLA.
+1) Show a table: Key, Summary, Status, Time to resolution.
 2) Suggest which tickets to prioritize (top 5).
 3) After I confirm, update the status to "In Progress" and add a customer comment.
 ```
