@@ -11,7 +11,7 @@ Reusable prompts for daily Jira Service Management triage operations.
 Use this when you start your shift and want to see what is new and unassigned.
 
 ```text
-List today's new unassigned <PROJECT> tickets in a table (Key, Summary, Status, Reporter, Created, SLA).
+List today's new unassigned <PROJECT> tickets in a table (Key, Summary, Status, Reporter, Created, Time to resolution).
 ```
 
 ---
