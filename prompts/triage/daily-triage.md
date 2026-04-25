@@ -10,8 +10,8 @@ Reusable prompts for daily Jira Service Management triage operations.
 
 Use this when you start your shift and want to see what is new and unassigned.
 
-```
-List today's new unassigned <PROJECT> tickets in a table (Key, Summary, Status, Reporter, Created, SLA).
+```text
+List today's new unassigned <PROJECT> tickets in a table (Key, Summary, Status, Reporter, Created, Time to resolution).
 ```
 
 ---
@@ -21,12 +21,12 @@ List today's new unassigned <PROJECT> tickets in a table (Key, Summary, Status, 
 Run this after you have seen the list and are ready to act on tickets.
 
 **Step 1 (Read-only):**
-```
+```text
 Show me all unassigned <PROJECT> tickets from the last 24 hours in a table (Key, Summary, Status, Reporter, Created).
 ```
 
 **Step 2 (After confirmation):**
-```
+```text
 /update-work-items
 Assign all listed tickets to me, change status from "Waiting for Support" to "In Progress", and add "Ticket under review. We'll update you shortly." as a customer reply.
 ```
@@ -37,10 +37,27 @@ Assign all listed tickets to me, change status from "Waiting for Support" to "In
 
 Use this for any ticket that looks unclear and you want an on-call-friendly description.
 
-```
+```text
 Improve this ticket description for on-call clarity and paste the improved version back:
 
 [PASTE DESCRIPTION]
+```
+
+---
+
+## 4) Weekend Unassigned Tickets
+
+Use this on Monday morning to catch tickets from the weekend (Friday afternoon through Monday).
+
+**Step 1 (Read-only):**
+```text
+Show me all unassigned <PROJECT> tickets from the last 3 days in a table (Key, Summary, Status, Reporter, Created).
+```
+
+**Step 2 (After confirmation):**
+```text
+/update-work-items
+Assign all listed tickets to me, change status from "Waiting for Support" to "In Progress", and add "Ticket under review. We'll update you shortly." as a customer reply.
 ```
 
 

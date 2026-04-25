@@ -4,7 +4,7 @@ Repository for Rovo (Atlassian AI assistant) prompts and JQL queries for Jira Se
 
 ## Critical JQL Syntax Rules
 
-**SLA fields cannot use date comparisons.**
+**The "Time to resolution" field cannot use date comparisons.**
 ```jql
 -- WRONG (will not work):
 "Time to resolution" >= "2026-04-03"
@@ -12,7 +12,7 @@ Repository for Rovo (Atlassian AI assistant) prompts and JQL queries for Jira Se
 remaining("Time to resolution") < 72
 ```
 
-**Available SLA functions:**
+**Available SLA functions for Time to resolution:**
 - `remaining("Time to resolution")` - hours until SLA expires
 - `elapsed("Time to resolution")` - hours since SLA started
 - `breached("Time to resolution")` - true/false, has SLA been breached
@@ -23,6 +23,28 @@ remaining("Time to resolution") < 72
 -- Use "comment ~" not "text ~":
 comment ~ "<PATTERN>"
 ```
+
+---
+
+## JQL/SLA Field Naming Conventions
+
+When referencing SLA fields in prompts or JQL queries, always use the actual Jira field name:
+
+- **Use:** `"Time to resolution"` (the actual SLA field name)
+- **Do NOT use:** `<SLA>`, `SLA field`, or generic placeholders
+
+Example in prompts:
+```text
+Show my open <PROJECT> tickets in a table (Key, Summary, Status, Time to resolution)
+```
+
+Example in JQL:
+```jql
+project = <PROJECT>
+AND remaining("Time to resolution") < 72
+```
+
+---
 
 ## Repository Structure
 
