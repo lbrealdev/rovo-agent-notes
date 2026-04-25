@@ -120,9 +120,6 @@ Once you've reviewed the comparison and drafts, use `/update-work-items` workflo
 
 ---
 
-## Sources
+**Resources:**
 
-- [Chat Actions](https://support.atlassian.com/rovo/docs/chat-actions/)
-- [Using Skills in a Chat](https://support.atlassian.com/rovo/docs/use-skills-in-a-chat/)
-- [Rovo Search and Fetch](https://support.atlassian.com/atlassian-rovo-mcp-server/docs/using-rovo-search-and-fetch-in-the-atlassian-remote-mcp-server/)
-- [Using Ops Guide](https://support.atlassian.com/rovo/docs/using-ops-guide/)
+For official Rovo documentation and resources, see [Rovo Resources](../docs/rovo-resources.md).

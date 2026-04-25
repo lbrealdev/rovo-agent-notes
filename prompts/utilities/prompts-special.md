@@ -101,7 +101,6 @@ For each ticket:
 - Assign work item
 - Comment on work item
 - Transition work item
-
 **Documentation:**
-- [Chat Actions](https://support.atlassian.com/rovo/docs/chat-actions/)
-- [Use Skills in a Chat](https://support.atlassian.com/rovo/docs/use-skills-in-a-chat/)
+
+See [Rovo Resources](../docs/rovo-resources.md) for official Rovo documentation.
