@@ -21,4 +21,8 @@ This document contains important links and official Rovo Atlassian resources.
 
 ---
 
-*Last updated: 2026-04-25*
+## 🔧 Additional Resources
+
+- [Using Ops Guide](https://support.atlassian.com/rovo/docs/using-ops-guide/)
+
+---

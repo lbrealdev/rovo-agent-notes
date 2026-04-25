@@ -41,10 +41,12 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
   - [Status + Resolution + Close](prompts/utilities/prompts-special.md#4-status--resolution--close)
   - [Bulk Action](prompts/utilities/prompts-special.md#5-bulk-action)
   - [JQL + Update](prompts/utilities/prompts-special.md#6-jql--update)
-- [Proofreading](prompts/communication/proofreading.md)
+| - [Proofreading](prompts/communication/proofreading.md)
   - [General Proofreading](prompts/communication/proofreading.md#general-proofreading)
   - [Client Messages](prompts/communication/proofreading.md#client-messages-projectaws-context)
   - [Message Templates](prompts/communication/proofreading.md#message-templates)
+
+| - [Rovo Resources](docs/rovo-resources.md) # Official Rovo Atlassian documentation links
 
 ### Experimental Prompts
 - [AWS Health Notifications](workbench/aws-health-notifications.md)
