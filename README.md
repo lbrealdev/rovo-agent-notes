@@ -37,8 +37,8 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
   - [SLA Expiring During Team Absence](prompts/sla/sla-management.md#2-sla-expiring-during-team-absence)
   - [Find Tickets with Note Pattern](prompts/sla/sla-management.md#3-find-tickets-with-note-pattern)
 
-### Other Prompts
-- [Special Commands](prompts/utilities/prompts-special.md)
+|### Other Prompts
+|- [Special Commands](prompts/utilities/prompts-special.md)
   - [Assign + Comment](prompts/utilities/prompts-special.md#1-assign--comment)
   - [Status Change + Comment](prompts/utilities/prompts-special.md#2-status-change--comment)
   - [Search + Assign + Comment](prompts/utilities/prompts-special.md#3-search--assign--comment)
@@ -49,6 +49,13 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
   - [General Proofreading](prompts/communication/proofreading.md#general-proofreading)
   - [Client Messages](prompts/communication/proofreading.md#client-messages-projectaws-context)
   - [Message Templates](prompts/communication/proofreading.md#message-templates)
+
+| - [Rovo Resources](docs/rovo-resources.md) # Official Rovo Atlassian documentation links
+
+### Experimental Prompts
+- [AWS Health Notifications](workbench/aws-health-notifications.md)
+- [Find Similar Resolved Tickets](workbench/find-similar-resolved.md)
+- [Recently Updated Tickets](workbench/recently-updated-tickets.md)
 
 ### JQL Queries
 - [My Tickets JQL](queries/jql/my-tickets.md)
@@ -63,18 +70,26 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
 ```
 .
 ├── workbench/                   # Experimental prompts (in testing)
-│   └── aws-health-notifications.md
+│   ├── aws-health-notifications.md
+│   ├── find-similar-resolved.md
+│   └── recently-updated-tickets.md
 ├── guides/
-│   ├── document-summaries.md    # Summarize Confluence/AWS docs
-│   └── .md
+│   └── document-summaries.md    # Summarize Confluence/AWS docs
 ├── prompts/
-│   ├── daily-triage.md         # Daily triage operations
-│   ├── reopened-tickets.md     # Handle reopened tickets
-│   ├── ticket-analysis.md      # Analyze & close tickets
-│   ├── sla-management.md       # SLA-aware prompts
-│   ├── prompts-special.md      # Lean multi-line prompts
-│   ├── quick-prompts.md        # Quick conversational prompts
-│   └── proofreading.md         # Message proofreading
+│   ├── triage/
+│   │   └── daily-triage.md     # Daily triage operations
+│   ├── tickets/
+│   │   ├── ticket-analysis.md  # Analyze & close tickets
+│   │   └── reopened-tickets.md # Handle reopened tickets
+│   ├── sla/
+│   │   ├── sla-management.md   # SLA-aware prompts
+│   │   └── sla-workflow.md     # SLA continuation workflow
+│   ├── communication/
+│   │   ├── proofreading.md     # Message proofreading
+│   │   └── confirm-before-action.md # Get approval before actions
+│   └── utilities/
+│       ├── prompts-special.md  # Lean multi-line prompts
+│       └── quick-prompts.md    # Quick conversational prompts
 └── queries/
     └── jql/
         └── my-tickets.md       # JQL queries for my tickets
