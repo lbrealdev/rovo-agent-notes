@@ -51,7 +51,7 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
   - [Message Templates](prompts/communication/proofreading.md#message-templates)
 
 ### Experimental Prompts
-- [Rovo Resources](docs/rovo-resources.md) # Official Rovo Atlassian documentation links
+- [Rovo Resources](docs/rovo-resources.md)
 - [AWS Health Notifications](workbench/aws-health-notifications.md)
 - [Find Similar Resolved Tickets](workbench/find-similar-resolved.md)
 - [Recently Updated Tickets](workbench/recently-updated-tickets.md)
