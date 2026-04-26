@@ -37,8 +37,8 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
   - [SLA Expiring During Team Absence](prompts/sla/sla-management.md#2-sla-expiring-during-team-absence)
   - [Find Tickets with Note Pattern](prompts/sla/sla-management.md#3-find-tickets-with-note-pattern)
 
-|### Other Prompts
-|- [Special Commands](prompts/utilities/prompts-special.md)
+### Other Prompts
+- [Special Commands](prompts/utilities/prompts-special.md)
   - [Assign + Comment](prompts/utilities/prompts-special.md#1-assign--comment)
   - [Status Change + Comment](prompts/utilities/prompts-special.md#2-status-change--comment)
   - [Search + Assign + Comment](prompts/utilities/prompts-special.md#3-search--assign--comment)
@@ -50,8 +50,6 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
   - [Client Messages](prompts/communication/proofreading.md#client-messages-projectaws-context)
   - [Message Templates](prompts/communication/proofreading.md#message-templates)
 
-| - [Rovo Resources](docs/rovo-resources.md) # Official Rovo Atlassian documentation links
-
 ### Experimental Prompts
 - [AWS Health Notifications](workbench/aws-health-notifications.md)
 - [Find Similar Resolved Tickets](workbench/find-similar-resolved.md)
@@ -62,6 +60,9 @@ Personal documentation for Rovo Agent prompts, tips, and daily operations.
   - [My Open Tickets](queries/jql/my-tickets.md#my-open-tickets)
   - [My Open Tickets (Assignee Only)](queries/jql/my-tickets.md#my-open-tickets-assignee-only)
   - [My Tickets by SLA](queries/jql/my-tickets.md#my-tickets-by-sla)
+
+### References
+- [Rovo Resources](docs/rovo-resources.md)
 
 ---
 
