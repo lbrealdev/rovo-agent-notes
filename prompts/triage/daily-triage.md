@@ -35,7 +35,7 @@ Assign all listed tickets to me, change status from "Waiting for Support" to "In
 
 ## 3) Improve Ticket Description
 
-Use this for any ticket that looks unclear and you want an on-call-friendly description.
+Use this for unclear tickets that need an on-call-friendly, actionable description.
 
 ```text
 Improve this ticket description for on-call clarity and paste the improved version back:
