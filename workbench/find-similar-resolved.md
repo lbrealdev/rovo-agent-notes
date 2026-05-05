@@ -83,15 +83,15 @@ ORDER BY resolved DESC
 
 ## Example
 
-**Current ticket:** AMS-500 (AWS Health notification - S3 bucket policy change)
+**Current ticket:** <TICKET-KEY> (AWS Health notification - S3 bucket policy change)
 
 **Prompt:**
 ```text
-I'm working on ticket AMS-500 (currently In Progress).
+I'm working on ticket <TICKET-KEY> (currently In Progress).
 
 Please search for tickets I previously resolved (within last 90 days) that are related to this one.
 
-Use the summary and description of AMS-500 to find matches based on content similarity.
+Use the summary and description of <TICKET-KEY> to find matches based on content similarity.
 
 For each related resolved ticket found:
 - Show: Key, Summary, Status, Resolution
@@ -101,7 +101,7 @@ For each related resolved ticket found:
 Limit to 10 most relevant matches.
 
 Then:
-- Compare AMS-500 with the most similar resolved ticket side-by-side
+- Compare <TICKET-KEY> with the most similar resolved ticket side-by-side
 - Identify patterns/lessons from the resolved ticket that apply
-- Draft a resolution comment for AMS-500 based on those patterns
+- Draft a resolution comment for <TICKET-KEY> based on those patterns
 ```

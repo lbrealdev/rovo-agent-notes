@@ -33,19 +33,7 @@ Assign all listed tickets to me, change status from "Waiting for Support" to "In
 
 ---
 
-## 3) Review & Improve Ticket Description
-
-Use this for any ticket that looks unclear and you want an on-call-friendly description.
-
-```text
-Improve this ticket description for on-call clarity and paste the improved version back:
-
-[PASTE DESCRIPTION]
-```
-
----
-
-## 4) Weekend Unassigned Tickets
+## 3) Weekend Unassigned Tickets
 
 Use this on Monday morning to catch tickets from the weekend (Friday afternoon through Monday).
 
