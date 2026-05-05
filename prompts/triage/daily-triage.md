@@ -34,7 +34,6 @@ Assign all listed tickets to me, change status from "Waiting for Support" to "In
 ---
 
 ## 3) Weekend Unassigned Tickets
-## 3) Weekend Unassigned Tickets
 
 Use this on Monday morning to catch tickets from the weekend (Friday afternoon through Monday).
 
